@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Exercices Microlead</title>
+</head>
+    <p><input id="text1" type="text" value=""></p>
+    <p><input id="text2" type="text" value=""></p>
+<p>
+        <button onclick="create()">Création d’une phrase </button>
+    </p>
+    <p id="resultat" style="font-weight:bold;"></p>
+<body>
+    <script type="text/javascript">
+        // ne pas toucher au nom de la fonction
+        function create() {
+            const A = document.getElementById("text1").value;
+            const B = document.getElementById("text2").value;
+            console.log(A + " " + B);
+        }
+    </script>
+</body>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        var moto = {
+            couleur: "noir",
+            puissance: "70cv",
+            cylindree: "650cc",
+            demarrer: function(){
+                console.log("vrooouuuum");
+            },
+            description: function(){
+                // votre code ici
+                console.log("La moto est de couleur " + this.couleur + 
+                            ", dispose d'une puissance de " + this.puissance + 
+                            " pour une cylindrée de " + this.cylindree + ".");
+            }
+        }
+        // 1. affichez la couleur de la moto
+        console.log(moto["couleur"]);
+        // 2. affichez la puissance de la moto
+        console.log(moto["puissance"]);
+        // 3. appelez la fonction "demarrer"
+        moto.demarrer();
+        // 4. appelez la fonction "description". cette fonction doit afficher la phrase suivante : 
+        // "La moto est de couleur [noir], dispose d'une puissance de [70cv] pour une cylindrée de [650cc]"
+        moto.description();
+        // 5. Changez la valeur de "couleur" et "puissance" et appelez à nouveau la fonction "description()"
+        moto.couleur = "gris";
+        moto.puissance = "100cv";
+        moto.description();
+    </script>
+</body>
+</html>

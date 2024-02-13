@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Exercices Microlead</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function Car(name, color, price, brand) {
+            this.Name = name;
+            this.Color = color;
+            this.Price = price;
+            this.Brand = brand;
+        }
+        Car.prototype.createdAt = Date.now();
+        let c = new Car();
+        console.log(c.createdAt);
+        let c2 = new Car();
+        console.log(c2.createdAt);
+    </script>
+</body>
+
+</html>

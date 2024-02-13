@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Exercices Microlead</title>
+</head>
+<body>
+
+    <ul>
+        <li>Couleur : <span class="color"></span></li>
+        <li>Marque : <span class="model"></span></li>
+        <li>Année : <span class="createdAt"></span></li>
+        <li>Vitesse : <span class="speed"></span></li>
+    </ul>
+
+    <script type="text/javascript">
+        const moto = {
+            color: "silver",
+            createdAt: "Honda",
+            model: "Civic",
+            speed: "fast",
+        }
+
+        // A ne pas modifier 
+        document.querySelector(".color").innerHTML = moto.color;
+        document.querySelector(".model").innerHTML = moto.model;
+        document.querySelector(".createdAt").innerHTML = moto.createdAt;
+        document.querySelector(".speed").innerHTML =moto.speed;
+    </script>
+</body>
+</html>

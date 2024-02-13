@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <h1>Liste de courses </h1>
+
+    <section>
+        <h2>Ajouter un élément</h2>
+        <form id="addItem">
+            <input type="text" name="newItem" id="newItem">
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <section>
+        <h1>Ma liste : </h1>
+        <ul class="list">
+            <!-- votre code-->
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        let form = document.querySelector('#addItem');
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            addItem();
+        });
+
+        function addItem() {
+            // Votre code
+            var ul = document.getElementsByClassName("list")[0];
+            var li = document.createElement("li");
+            var newItem = document.getElementById("newItem").value;
+            if (!newItem) {return};
+            var itemNode = document.createTextNode(newItem)
+            li.appendChild(itemNode);
+            ul.appendChild(li);
+    
+        }
+    </script>
+</body>
+</html>

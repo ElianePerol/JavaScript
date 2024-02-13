@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Exercices Microlead</title>
+</head>
+    <p><input id="chiffre1" type="number" value="5"></p>
+    <p><input id="chiffre2" type="number" value="2"></p>
+<p>
+        <button onclick="addition()">Ajouter (A + B)</button>
+        <button onclick="soustraction()">Soustraire (A - B)</button>
+        <button onclick="division()">Diviser (A / B)</button>
+        <button onclick="multiplication()">Multiplier (A * B)</button>
+    </p>
+    <p id="resultat" style="font-weight:bold;"></p>
+<body>
+    <script type="text/javascript">
+        // Ne pas toucher aux noms des fonctions
+
+        function addition() {
+            const A = document.getElementById("chiffre1").valueAsNumber;
+            const B = document.getElementById("chiffre2").valueAsNumber;
+            const add = A + B;
+            console.log(add);
+        }
+        function soustraction() {
+            const A = document.getElementById("chiffre1").valueAsNumber;
+            const B = document.getElementById("chiffre2").valueAsNumber;
+            const sub = A - B;
+            console.log(sub);
+        }
+        function division() {
+            const A = document.getElementById("chiffre1").valueAsNumber;
+            const B = document.getElementById("chiffre2").valueAsNumber;
+            const divi = A / B;
+            console.log(divi);
+        }
+        function multiplication() {
+            const A = document.getElementById("chiffre1").valueAsNumber;
+            const B = document.getElementById("chiffre2").valueAsNumber;
+            const mult = A * B;
+            console.log(mult);
+        }
+    </script>
+</body>
