@@ -11,4 +11,4 @@ Ces exercices visent à renforcer mes compétences en programmation JavaScript, 
 - **Résoudre des problèmes de logique avec des exercices pratiques** : Améliorer la capacité à résoudre des problèmes en utilisant JavaScript.
 
 ## Contenu du Projet
-Chaque dossier représente un exercice spécifique, avec des fichiers JavaScript contenant les solutions et des explications sur la logique des exercices.
+Chaque dossier représente un exercice spécifique, avec des fichiers JavaScript contenant les solutions des exercices.
